@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:#141414;
+}
+
+.image-background {
+    width: 300px; /* Adjust the width and height as needed */
+    height: 200px;
+    position: relative; /* Required for overlay */
+}
+  
+.image-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.row{
+    display: flex;
+}
+
+i{
+    font-weight: 400;
+}
+
+.playlistContainer{
+    background-color: #1c1b1b;
+    height: calc(100vh - 20px);
+    width: 35%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.playListHeader{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.addLibrary{
+    align-self: flex-start;
+}
+
+.libraryTitle{
+    font-family: 'poppins', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    margin: 5px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.libraryTitle span{
+    margin-left: 5px;
+}
+
+.playListChild{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.playlistCategory{
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+    color: #1c1b1b;
+    margin: 5px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 800;
+}
+
+.playlistSearchWrapper{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    margin: 5px;
+    justify-items: center;
+    align-items: center;
+}
+
+.playlistSearchWrapper input{
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    color: lightgray;
+    font-family: 'poppins', sans-serif;
+    background-color: #1c1b1b;
+}
+
+.playlistItemContainer{
+    overflow-y: scroll;
+    height: 70vh;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns per row */
+    grid-gap: 10px; /* Gap between items */
+    justify-items: center; /* Center items horizontally */
+}
+
+.playlistItem{
+    background-image: url('living-room-1835923_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 110px;
+    width: 110px;
+    border-radius: 5px;
+    margin: 5px;
+    position: relative;
+}
+
+.playlistItem button {
+    height: 45px;
+    width: 45px;
+    border: none;
+    bottom: 0;
+    border-radius: 90px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #43f749;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+.albumSongs{
+    background-color: #1c1b1b;
+    height: calc(100vh - 20px);
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.searchWrapper{
+    padding: 2px;
+    width: 60%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #141414;
+}
+
+.searchWrapper input{
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    color: lightgray;
+    font-family: 'poppins', sans-serif;
+    background-color: transparent;
+}
+  
